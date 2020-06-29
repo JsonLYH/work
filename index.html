@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			p{
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body style="background-image:url(img/16.jpg) ;">
+		<nav class="navbar navbar-default navbar-inverse container-fluid">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand">
+						<img src="img/image/顺游logo.gif" style="margin-top: -15px;width: 100px;height: 50px;"/>
+					</a>
+					<button type="button" class="navbar navbar-collapse navbar-toggle"></button>
+				</div>
+					<div class="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">首页</a></li>
+							<li><a href="#Media">近期活动</a></li>
+							<li><a href="#Panels">我的旅游</a></li>
+							<li><a href="#thumb">随心所去</a></li>
+							<li><a href="#Iconform">联系客服</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li data-toggle="modal" data-target="#myModal"><a href="#">登入</a></li>
+							<li><a href="registrt.html">注册</a></li>
+						</ul>
+					</div>
+			</div>
+		</nav>
+		
+		<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							x
+						</button>
+						<h3 class="modal-title text-center" id="myModalLabel">
+							登入
+						</h3>
+						<p class="pull-right"><a>在顺游世界上使用是否有疑问？</a></p>
+					</div>
+					<div class="modal-body">
+						<div class="row form-group">
+							<div class="col-sm-12 has-feedback" style="margin-top: 10px;">
+								<input type="text" class="form-control input-lg input" placeholder="用户名" style="margin-left: 40px;width: 525px;"/>
+								<span class="glyphicon glyphicon-user form-control-feedback" style="left: 5px;"></span>
+							</div>
+							<div class="row">
+								<div class="col-sm-12" style="margin-top: 30px;">
+									<div class="col-md-8">
+										<input type="text" class="form-control input-lg input" placeholder="验证码" style="margin-left: 40px;width: 350px;"/>
+										<span class="glyphicon glyphicon-globe form-control-feedback" style="left: 5px;"></span>
+									</div>
+									<div class="col-sm-1 col-sm-offset-1">
+										<button type="button" class="btn btn-default"style="margin-left: -35px;height: 45px;width: 150px;">获取验证码</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-12 has-feedback" style="margin-top: 30px;">
+								<input type="text" class="form-control input-lg input" placeholder="密码.至少6位字母或数字" style="margin-left: 40px;width: 525px;"/>
+								<span class="glyphicon glyphicon-user form-control-feedback" style="left: 5px;"></span>
+								<button type="button" class="col-sm-12 btn btn-group-lg btn-default" style="background-color: #000000;color: #FFFFFF;margin-top: 30px;height: 50px;">登入</button>
+								<strong class="pull-left" style="margin-top: 25px;">未有账号,<a href="registrt.html">注册</a></strong>
+								<strong class="pull-right" style="margin-top: 25px;">注册即代表您已阅读并同意<a><使用协议></a></strong>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss ="modal">登入</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Homepageage" class="container-fluid text-center">
+			<div class="row">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ul>
+						<div class="carousel-inner">
+							<div class="item active" style="background: #223240;">
+								<img src="img/image/pexels-photo-29773.jpg" style="margin: 0 auto;width:2000px;height: 1080px;"/>
+							</div>
+							
+							<div class="item" style="background: #F5E4DC;">
+								<img src="img/image/pexels-photo-395196.jpeg" style="margin: 0 auto;width:2000px;height: 1080px;"/>
+							</div>
+							
+							<div class="item" style="background: #DE2A2D;">
+								<img src="img/image/pexels-photo-396947.jpeg" style="margin: 0 auto;width:2000px;height: 1080px;"/>
+							</div>
+						</div>
+						<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						
+						<a href="#myCarousel" class="right carousel-control" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Media" class="container-fluid" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/image/团游.jpg" class="media-object img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h1>跟团游</h1><br />
+							<p>跟团游是指您在旅游某地的时候通过旅游社预订其某一条线路的旅游产品，参加旅行社组织的团队旅游活动。</p><br />
+							<p>跟团游也分为全跟团和半跟团。全跟团是指您在单次旅游活动中，所有的吃、住、行、游、购、娱都由旅行社人员为您安排，您只需跟随整个团队行程即可。</p><br />
+							<p>半跟团游是指您在单次旅游活动中，旅游社只为您安排吃、住、行、游、购、娱六个环节中的某一个或者某几个环节，其他的环节由您根据自身喜好自己安排的出游方式。
+一般老年人、小孩、国外出游会选择全跟团游，国内旅游目的地接待能力不成熟、旅游市场较混乱的地方也建议选择全跟团游。而自身比较熟悉的地方或者旅游市场已经很成熟的地方可以选择半跟团游。另外，全跟团游也会比半跟团游或者自助游（也就是不跟团游览）实惠得多。</p><br />
+						</div>
+					</div>
+				</div>
+				<<div class="row" style="margin-top: 30px;">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/image/乡游.jpg" class="media-object img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h1>乡游</h1><br />
+							<p>由于现代乡村旅游融乡村自然意象、文化意象和现代科技于一体，旅游发展与农业生产于一体和城市旅游与乡村旅游于一体，因而是可持续旅游。</p><br />
+							<p>乡村旅游不仅指单一的观光游览项目和活动，还包括观光、娱乐、康疗、民俗、科考、访祖等在内的多功能、复合型旅游活动。乡村旅游的复合型导致游客在主体行为上具有很大程度的参与性。乡村旅游能够让游客体验乡村民风民俗、农家生活和劳作形式，在劳动的欢快之余，购得满意的农副产品和民间工艺品。</p><br />
+							<p>乡村旅游规划，是旅游规划的一种。从资源的角度而言，是以村落、郊野、田园等环境为依托，通过对资源的分析、对比，形成一种具有特色的发展方向。近期，乡村旅游往往和新农村建设联系在一起。乡村旅游发展是乡村创新经济学理论下的一个成功实践。在我国广大的乡村地区存在着丰富的人文历史资源和生态自然资源，乡村旅游开发和发展存在着巨大的潜力和市场。</p><br />
+						</div>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/image/凤凰古城.jpg" class="media-object img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h1>凤凰古城</h1><br />
+							<p>凤凰古城位于湖南省湘西土家族苗族自治州西南部，是首批“中国旅游强县”之一的凤凰县县城所在地，是中国历史文化名城，国家4A级景区，曾被新西兰著名作家路易·艾黎称赞为中国最美丽的小城，与云南丽江古城、山西平遥古城媲美，享有“北平遥，南凤凰”之美誉。</p><br />
+							<p>凤凰古城是中国历史文化名城，首批中国旅游强县，国家4A级景区，曾被新西兰著名作家路易艾黎称赞为中国最美丽的小城。地理位置可概括为：“西托云贵，东控辰沅，北制川鄂，南扼桂边”。这里与吉首的德夯苗寨，永顺的猛洞河，贵州的梵净山相毗邻，是怀化、吉首、贵州铜仁三地之间的必经之路。</p><br />
+							<p>凤凰古城始建于清康熙四十三年〔1704年〕，历经300多年的风雨凤凰沧桑，古貌犹存。现东门和北门古城楼尚在。城内青石板街道，江边木结构吊脚楼，以及朝阳宫、古城博物馆、杨家祠堂、沈从文故居、熊希龄故居、天王庙、大成殿、万寿宫等建筑，无不具古城特色。
+</p><br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Panels" class="container-fluid text-center" style="margin-top: 30px;">
+			<div class="row">
+				<h1>购票</h1>
+				<h4>请详细确认购买票</h4>
+				<div class="col-sm-4">
+					<div class="panel-default" style="border: #000000; 1px solid">
+						<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+							<h1>跟团游</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpsum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>sit</p>
+							<p><strong>Endless</strong>Ament</p>
+						</div>
+						<div class="panel-footer">
+							<h1>$20</h1>
+							<h4>per month</h4>
+							<button type="button" style="background-color: #000000; color: #FFFFFF;" class="btn-lg">确认购买</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4">
+					<div class="panel-default" style="border: #000000; 1px solid">
+						<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+							<h1>乡游</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpsum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>sit</p>
+							<p><strong>Endless</strong>Ament</p>
+						</div>
+						<div class="panel-footer">
+							<h1>$10</h1>
+							<h4>per month</h4>
+							<button type="button" style="background-color: #000000; color: #FFFFFF;" class="btn-lg">确认购买</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4">
+					<div class="panel-default" style="border: #000000; 1px solid">
+						<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+							<h1>凤凰古城</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpsum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>sit</p>
+							<p><strong>Endless</strong>Ament</p>
+						</div>
+						<div class="panel-footer">
+							<h1>$25</h1>
+							<h4>per month</h4>
+							<button type="button" style="background-color: #000000; color: #FFFFFF;" class="btn-lg">确认购买</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="thumb" class="container-fluid" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h1>旅游日期</h1>
+						<p>我们来一场说走就走的旅行</p>
+						<p>快点来预订吧</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<ul class="row">
+						<li class="list-group-item">September<span class="btn btn-danger">销售</span></li>
+						<li class="list-group-item">October<span class="btn btn-danger">销完</span></li>
+						<li class="list-group-item">November
+							<span class="label btn btn-default label-success btn-lg pull-right" style="border-radius: 25px; background-color: #555555;">3s</span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<div class="thumbnail">
+							<img src="img/bj.jpg" class="img-rounded" />
+							<p><strong>北京</strong></p>
+							<p></p>
+							<p><strong>Sta. 28 November 2017</strong></p>
+							<span class="btn btn-default" style="background-color: #CCCCCC;">预订</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-4">
+						<div class="thumbnail">
+							<img src="img/sh.jpg" class="img-rounded" />
+							<p><strong>上海</strong></p>
+							<p></p>
+							<p><strong>Sta. 29 November 2017</strong></p>
+							<span class="btn btn-default" style="background-color: #CCCCCC;">预订</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-4">
+						<div class="thumbnail">
+							<img src="img/wh.jpg" class="img-rounded" />
+							<p><strong>武汉</strong></p>
+							<p></p>
+							<p><strong>Sta. 27 November 2017</strong></p>
+							<span class="btn btn-default" style="background-color: #CCCCCC;">预订</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Iconform" class="container-fluid">
+			<div class="container">
+				<h1 class="text-center">联系客服</h1>
+				<div class="row">
+					<div class="col-sm-5">
+						<p>Contact us and we'11 get back to you within 20 hours.</p>
+						<p><span class="glyphicon glyphicon-map-marker">Chicago US</span></p>
+						<p><span class="glyphicon glyphicon-phone">+00 15151515151515 US</span></p>
+						<p><span class="glyphicon glyphicon-envelope">myemail@something.com</span></p>
+					</div>
+					<div class="col-sm-7">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="text" placeholder="用户名" />
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="email" placeholder="邮箱" />
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea type="text" class="form-control" rows="5"></textarea>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 10px;">
+							<div class="col-sm-offset-11 pull-right" style="margin-right: 15px;">
+								<button type="button" class="btn btn-default">发送</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="background-color: #000000; margin-top: 30px;" class="container-fluid text-center">
+			<b style="color: #FFFFFF;">计算机|网站开发|Bootstrap</b>
+			<p style="margin-top: 30px; color: #DCDCDC;">地址:南宁xxx市xxxxxxxxxxx</p>
+		</div>
+	</body>
+</html>
